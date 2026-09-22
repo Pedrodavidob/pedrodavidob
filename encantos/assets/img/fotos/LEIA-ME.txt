@@ -1,0 +1,16 @@
+Coloque aqui as fotos reais da Encantos, com estes nomes exatos
+(.jpg, .webp, .png ou .jpeg — a extensão não importa):
+
+  hero                 topo da página (vertical: buquê + chocolate + embalagem)
+  buques               buquê montado, em pé
+  chocolates           chocolates (foto horizontal)
+  presentes            presentes / itens da loja
+  arranjos             arranjo de mesa
+  combinacoes          flor + chocolate + cartão juntos
+  chocolate-destaque   chocolates em fundo escuro (foto quadrada)
+  galeria-1 ... galeria-6   seis fotos variadas do que sai da loja
+  fachada              fachada da loja
+  sobre                interior da loja ou alguém montando um buquê
+
+Assim que o arquivo existir, a foto entra sozinha no lugar da arte.
+Não é preciso mexer no código. Mínimo de 1600px no lado maior.
