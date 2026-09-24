@@ -54,6 +54,7 @@ Salve as imagens em `assets/img/fotos/` com **exatamente** estes nomes:
 | `arranjos.jpg` | destaques | arranjo de mesa |
 | `combinacoes.jpg` | destaques | flor + chocolate + cartão juntos |
 | `chocolate-destaque.jpg` | seção Chocolates | foto quadrada, fundo escuro |
+| `coroas.jpg` | seção Coroas de flores | coroa montada, foto vertical |
 | `galeria-1.jpg` … `galeria-6.jpg` | galeria | 6 fotos variadas do que sai da loja |
 | `fachada.jpg` | localização | fachada da loja |
 | `sobre.jpg` | sobre | interior da loja ou alguém montando um buquê |
@@ -87,6 +88,9 @@ texto e autorização de uso) e troque o bloco.
 
 Só entrou o que estava confirmado nos materiais enviados:
 
+- **Serviços:** flores, buquês, arranjos, chocolates, presentes e **coroas de flores** (velórios e homenagens)
+- **Entrega:** Bom Conselho, Terezinha, Brejão, Lagoa do São José e Igreja Nova — outras localidades, consultar
+- **Domingo:** a loja não abre e não há vendas; saem apenas as entregas já fechadas e agendadas até sábado
 - **Endereço:** Rua Sete de Setembro, 91 — Bom Conselho/PE (ao lado do Escritório de Contabilidade de Lúcia Moura)
 - **WhatsApp:** (87) 98145-4522 → `https://wa.me/5587981454522`
 - **Instagram:** [@encantos_flores_e_chocolates](https://www.instagram.com/encantos_floresechocolates/)

@@ -429,15 +429,36 @@ ul{margin:0;padding:0;list-style:none}
   transition:transform .4s var(--ease),box-shadow .4s var(--ease)
 }
 .cartao:hover{transform:translateY(-4px);box-shadow:var(--sombra-m)}
-.cartao svg{width:26px;height:26px;color:var(--verde);margin-bottom:.9rem}
-.cartao h3{font-size:var(--f-lg);margin-bottom:.4rem}
-.cartao p{font-size:var(--f-sm);color:var(--tinta-suave);font-weight:300}
+.cartao svg,.destaque-domingo svg{width:26px;height:26px;color:var(--verde);margin-bottom:.9rem;display:block}
+.cartao h3,.destaque-domingo h3{font-size:var(--f-lg);margin-bottom:.4rem}
+.cartao p,.destaque-domingo p{font-size:var(--f-sm);color:var(--tinta-suave);font-weight:300}
 .destaque-domingo{
   background:var(--verde);color:var(--creme);border-radius:var(--r-md);padding:1.7rem 1.5rem;
   box-shadow:0 20px 44px -26px rgba(6,96,47,.9)
 }
 .destaque-domingo svg{color:var(--blush-2)}
 .destaque-domingo p{color:rgba(251,246,239,.8)}
+
+
+/* Coroas de flores — tom sóbrio, sem perder a marca */
+.coroas{display:grid;gap:var(--s-5);align-items:center}
+.coroas .ph{aspect-ratio:4/5}
+.coroas__itens{display:grid;gap:.85rem;margin-top:var(--s-3)}
+.coroas__itens li{display:flex;align-items:center;gap:.8rem;font-size:var(--f-sm);color:var(--tinta-suave);font-weight:300}
+.coroas__itens svg{width:20px;height:20px;color:var(--verde);flex:none}
+.coroas__aviso{margin-top:1rem;font-size:var(--f-sm);color:var(--tinta-suave);font-weight:300}
+
+/* Localidades atendidas */
+.cidades{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:var(--s-3)}
+.cidades li{
+  border:1px solid var(--linha);border-radius:100px;padding:.5rem 1.05rem;
+  font-size:var(--f-sm);font-weight:400;color:var(--tinta);background:rgba(255,255,255,.55)
+}
+.cidades__nota{margin-top:.9rem;font-size:var(--f-sm);color:var(--tinta-suave);font-weight:300}
+.horario__nota{
+  margin-top:.7rem;font-family:var(--sans);font-size:var(--f-sm);font-weight:300;
+  color:rgba(251,246,239,.62);line-height:1.55;max-width:44ch
+}
 
 /* Sobre */
 .sobre{display:grid;gap:var(--s-5);align-items:center;position:relative}
@@ -570,6 +591,9 @@ ul{margin:0;padding:0;list-style:none}
 
   .entrega{grid-template-columns:1fr 1.1fr;gap:var(--s-6)}
   .cartoes{grid-template-columns:repeat(2,1fr)}
+
+  .coroas{grid-template-columns:.85fr 1.15fr;gap:var(--s-6)}
+  .coroas .ph{aspect-ratio:3/4}
 
   .sobre{grid-template-columns:1fr 1fr;gap:var(--s-6)}
   .sobre__arte{padding-left:var(--s-4)}
