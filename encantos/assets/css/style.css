@@ -255,6 +255,13 @@ ul{margin:0;padding:0;list-style:none}
   letter-spacing:.24em;text-transform:uppercase;color:rgba(30,42,34,.38);font-weight:500;
   transition:opacity .4s;
 }
+/* Crédito que continua visível por cima da fotografia (ex.: hero) */
+.ph--credito.tem-foto .ph__nota{
+  opacity:1;left:1rem;bottom:1rem;right:auto;width:max-content;max-width:calc(100% - 2rem);
+  background:rgba(251,246,239,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  color:var(--verde);padding:.55rem 1.05rem;border-radius:100px;font-weight:500;
+  letter-spacing:.16em;font-size:.62rem;box-shadow:0 8px 22px -12px rgba(30,42,34,.5)
+}
 .ph--verde{background:
     radial-gradient(80% 60% at 20% 10%,rgba(160,210,180,.3),transparent 60%),
     linear-gradient(158deg,var(--verde) 0%,var(--verde-esc) 55%,var(--verde-prof) 100%);
@@ -319,12 +326,22 @@ ul{margin:0;padding:0;list-style:none}
 
 .hero__arte{position:relative}
 .hero__moldura{aspect-ratio:4/5;width:100%}
+.hero__moldura .ph__foto{background-position:50% 12%}
 .hero__etiqueta{
   position:absolute;right:-.6rem;bottom:1.6rem;background:var(--creme);border-radius:100px;
   padding:.75rem 1.3rem;box-shadow:var(--sombra-m);display:flex;align-items:center;gap:.6rem;
   font-size:var(--f-xs);letter-spacing:.18em;text-transform:uppercase;font-weight:500;color:var(--verde)
 }
 .hero__etiqueta svg{width:16px;height:16px}
+
+/* No celular a foto vem primeiro: quem chega pelo Instagram vê logo
+   a dona e o trabalho, antes de precisar rolar.                        */
+@media (max-width:1023px){
+  .hero__arte{order:-1;margin-bottom:var(--s-2)}
+  .hero{padding-top:clamp(5.5rem,17vw,8rem)}
+  /* uma etiqueta só no celular: as duas se atropelavam sobre o rosto */
+  .hero__etiqueta{display:none}
+}
 
 /* pétalas flutuantes */
 .petalas{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
@@ -569,12 +586,16 @@ ul{margin:0;padding:0;list-style:none}
   .presente{grid-template-columns:.85fr 1.15fr;gap:var(--s-6);align-items:start}
   .presente__texto{position:sticky;top:7rem}
 
+  /* grade dos destaques — hoje com 4 cards */
   .destaques{grid-template-columns:repeat(12,1fr);gap:var(--s-3) var(--s-3)}
   .dest--a{grid-column:span 5}
   .dest--b{grid-column:span 7;align-self:end}
-  .dest--c{grid-column:span 4}
-  .dest--d{grid-column:span 4;margin-top:var(--s-5)}
-  .dest--e{grid-column:span 4}
+  .dest--c{grid-column:span 6}
+  .dest--d{grid-column:span 6;margin-top:var(--s-5)}
+  /* com 5 cards (ao reativar Arranjos), use:
+     .dest--c{grid-column:span 4}
+     .dest--d{grid-column:span 4;margin-top:var(--s-5)}
+     .dest--e{grid-column:span 4}                                */
 
   .choc-grade{grid-template-columns:.95fr 1.05fr;gap:var(--s-6)}
   .choc-grade__texto{order:2}

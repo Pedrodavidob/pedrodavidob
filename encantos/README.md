@@ -22,58 +22,42 @@ Precisa ser servida por HTTP (as fontes locais não carregam via `file://`).
 
 ---
 
-## ⚠️ ARQUIVOS AUSENTES — fotografias reais
+## Fotografias
 
-**Nenhuma foto de produto da Encantos foi fornecida.** Os materiais recebidos foram
-5 capturas de tela (dados do WhatsApp Business, dois posts do Instagram e duas
-referências de layout de outras floriculturas).
+As fotos reais da Encantos estão em `assets/img/fotos/`, recortadas para a
+proporção de cada espaço e convertidas para WebP (1,4 MB no total).
 
-O que foi aproveitado dos arquivos reais:
-
-| Arquivo | Origem | Uso |
+| Arquivo | Onde aparece | Conteúdo |
 |---|---|---|
-| `assets/img/logo.png` | logotipo oficial recortado da foto de perfil (250×250, fundo transparente) | nav, hero, sobre, rodapé |
-| `assets/img/favicon-64.png`, `apple-touch-icon.png`, `icon-512.png` | gerados a partir do logo | ícones do navegador |
-| `assets/img/og-image.jpg` | gerado com o logo real + dados confirmados | prévia ao compartilhar o link |
+| `hero.webp` | topo da página | Ediane Feitosa com buquê (crédito visível na foto) |
+| `buques.webp` | destaques | o mesmo buquê, em close |
+| `chocolates.webp` | destaques | caixa com vinho e chocolates |
+| `presentes.webp` | destaques | cesta com pelúcias, caneca e chocolates |
+| `combinacoes.webp` | destaques | buquê de rosas com Ferrero |
+| `chocolate-destaque.webp` | seção Chocolates | cesta de chocolates e vinho |
+| `coroas.webp` | seção Coroas de flores | coroa montada |
+| `fachada.webp` | localização | fachada da loja |
+| `sobre.webp` | sobre | letreiro da loja |
 
-**Nenhuma imagem de IA foi usada, e nenhuma foto de produto foi inventada.** Onde
-entraria fotografia, a página usa composições gráficas próprias (gradientes da
-paleta da marca + desenho botânico em SVG), pensadas para ficarem bonitas vazias
-e serem substituídas em um minuto.
+O logotipo (`logo.png`), o favicon e a imagem de Open Graph foram gerados a
+partir da foto de perfil oficial.
 
-### Fotos que faltam (é só salvar o arquivo, sem mexer no código)
+**Como trocar ou acrescentar uma foto:** salve o arquivo em
+`assets/img/fotos/` com o nome do espaço e acrescente o nome em
+`assets/img/fotos/fotos.json`. Sem o manifesto a página ainda encontra a foto
+sozinha, só faz algumas requisições a mais.
 
-Salve as imagens em `assets/img/fotos/` com **exatamente** estes nomes:
+### ⚠️ O que ainda falta
 
-| Arquivo | Onde aparece | Enquadramento sugerido |
-|---|---|---|
-| `hero.jpg` | topo da página | composição vertical: buquê + chocolate + embalagem |
-| `buques.jpg` | destaques | buquê montado, em pé |
-| `chocolates.jpg` | destaques | chocolates, foto horizontal |
-| `presentes.jpg` | destaques | presentes/itens da loja |
-| `arranjos.jpg` | destaques | arranjo de mesa |
-| `combinacoes.jpg` | destaques | flor + chocolate + cartão juntos |
-| `chocolate-destaque.jpg` | seção Chocolates | foto quadrada, fundo escuro |
-| `coroas.jpg` | seção Coroas de flores | coroa montada, foto vertical |
-| `galeria-1.jpg` … `galeria-6.jpg` | galeria | 6 fotos variadas do que sai da loja |
-| `fachada.jpg` | localização | fachada da loja |
-| `sobre.jpg` | sobre | interior da loja ou alguém montando um buquê |
+Duas partes estão **prontas, porém desativadas** por falta de imagem. Voltam
+descomentando o bloco no `index.html` (as instruções estão no próprio comentário):
 
-Aceita `.jpg`, `.webp`, `.png` ou `.jpeg`. Assim que o arquivo existir, a foto entra
-sozinha no lugar da arte — sem editar HTML.
-
-Dicas: foto na vertical para os slots altos, luz natural, fundo limpo, mínimo de
-1600px no lado maior. Depois de adicionar, vale converter para `.webp` para a
-página ficar mais leve.
-
-**Opcional — manifesto.** Se quiser evitar as requisições de sondagem, crie
-`assets/img/fotos/fotos.json` listando os arquivos:
-
-```json
-["hero.jpg", "buques.webp", "galeria-1.jpg"]
-```
-
----
+1. **Card "Arranjos"** nos destaques — falta uma foto de arranjo de mesa.
+   Ao reativar, ajuste também a grade em `style.css` (procure por
+   "grade dos destaques").
+2. **Seção "Galeria"** — precisa de 6 fotos (`galeria-1` … `galeria-6`).
+   Sugestões: vitrine da loja, alguém montando um buquê, detalhe da
+   embalagem, chocolates avulsos, arranjo pronto, entrega saindo.
 
 ## ⚠️ Avaliações — nada foi inventado
 
