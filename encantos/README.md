@@ -36,6 +36,8 @@ proporção de cada espaço e convertidas para WebP (1,4 MB no total).
 | `combinacoes.webp` | destaques | buquê de rosas com Ferrero |
 | `chocolate-destaque.webp` | seção Chocolates | cesta de chocolates e vinho |
 | `coroas.webp` | seção Coroas de flores | coroa montada |
+| `arranjos.webp` | destaques | arranjo de gérberas em vaso |
+| `galeria-1.webp` … `galeria-5.webp` | galeria | vitrine, buquês, porta da loja e rua de Bom Conselho |
 | `fachada.webp` | localização | fachada da loja |
 | `sobre.webp` | sobre | letreiro da loja |
 
@@ -47,17 +49,9 @@ partir da foto de perfil oficial.
 `assets/img/fotos/fotos.json`. Sem o manifesto a página ainda encontra a foto
 sozinha, só faz algumas requisições a mais.
 
-### ⚠️ O que ainda falta
-
-Duas partes estão **prontas, porém desativadas** por falta de imagem. Voltam
-descomentando o bloco no `index.html` (as instruções estão no próprio comentário):
-
-1. **Card "Arranjos"** nos destaques — falta uma foto de arranjo de mesa.
-   Ao reativar, ajuste também a grade em `style.css` (procure por
-   "grade dos destaques").
-2. **Seção "Galeria"** — precisa de 6 fotos (`galeria-1` … `galeria-6`).
-   Sugestões: vitrine da loja, alguém montando um buquê, detalhe da
-   embalagem, chocolates avulsos, arranjo pronto, entrega saindo.
+Todos os espaços de fotografia estão preenchidos. A galeria tem cinco fotos
+(duas linhas completas da grade); para uma sexta, acrescente `galeria-6` no
+HTML e uma regra `.gf` em `style.css`.
 
 ## ⚠️ Avaliações — nada foi inventado
 

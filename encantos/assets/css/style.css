@@ -586,16 +586,13 @@ ul{margin:0;padding:0;list-style:none}
   .presente{grid-template-columns:.85fr 1.15fr;gap:var(--s-6);align-items:start}
   .presente__texto{position:sticky;top:7rem}
 
-  /* grade dos destaques — hoje com 4 cards */
+  /* grade dos destaques — 5 cards */
   .destaques{grid-template-columns:repeat(12,1fr);gap:var(--s-3) var(--s-3)}
   .dest--a{grid-column:span 5}
   .dest--b{grid-column:span 7;align-self:end}
-  .dest--c{grid-column:span 6}
-  .dest--d{grid-column:span 6;margin-top:var(--s-5)}
-  /* com 5 cards (ao reativar Arranjos), use:
-     .dest--c{grid-column:span 4}
-     .dest--d{grid-column:span 4;margin-top:var(--s-5)}
-     .dest--e{grid-column:span 4}                                */
+  .dest--c{grid-column:span 4}
+  .dest--d{grid-column:span 4;margin-top:var(--s-5)}
+  .dest--e{grid-column:span 4}
 
   .choc-grade{grid-template-columns:.95fr 1.05fr;gap:var(--s-6)}
   .choc-grade__texto{order:2}
@@ -605,10 +602,9 @@ ul{margin:0;padding:0;list-style:none}
   .ga{grid-column:span 5}
   .gb{grid-column:span 4;margin-top:var(--s-5)}
   .gc{grid-column:span 3}
+  .galeria__nota{grid-column:span 5;text-align:left;place-content:center start;padding:0 1rem}
   .gd{grid-column:span 4}
   .ge{grid-column:span 3;margin-top:calc(var(--s-4) * -1)}
-  .gf{grid-column:span 5}
-  .galeria__nota{grid-column:span 5;text-align:left;place-content:center start;padding:0 1rem}
 
   .entrega{grid-template-columns:1fr 1.1fr;gap:var(--s-6)}
   .cartoes{grid-template-columns:repeat(2,1fr)}

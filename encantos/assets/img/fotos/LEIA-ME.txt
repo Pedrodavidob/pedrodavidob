@@ -1,16 +1,20 @@
-As fotos reais já estão nesta pasta, em WebP, recortadas para cada espaço.
+As fotos reais da Encantos estão nesta pasta, em WebP, recortadas para a
+proporção de cada espaço do site. Todos os espaços estão preenchidos.
 
-Para trocar uma foto: salve com o mesmo nome (a extensão pode ser .jpg,
-.webp, .png ou .jpeg) e confira se o nome está em fotos.json.
+Para trocar uma foto: salve com o mesmo nome (pode ser .jpg, .webp, .png
+ou .jpeg) e confira se o nome está listado em fotos.json.
 
-AINDA FALTAM (as duas partes estão desativadas no index.html):
-
-  arranjos     arranjo de mesa                -> reativa o card "Arranjos"
-  galeria-1    vitrine da loja                -> reativa a seção "Galeria"
-  galeria-2    alguém montando um buquê
-  galeria-3    detalhe da embalagem
-  galeria-4    chocolates avulsos
-  galeria-5    arranjo pronto
-  galeria-6    entrega saindo da loja
+Espaços:
+  hero                 Ediane Feitosa com buquê (topo da página)
+  buques               buquê em close
+  chocolates           caixa com vinho e chocolates
+  presentes            cesta com pelúcias e chocolates
+  arranjos             arranjo de gérberas em vaso
+  combinacoes          buquê de rosas com Ferrero
+  chocolate-destaque   cesta de chocolates (seção Chocolates)
+  coroas               coroa de flores
+  galeria-1 .. 5       vitrine, buquês, porta da loja e rua
+  fachada              fachada da loja (Localização)
+  sobre                letreiro da loja (Sobre)
 
 Mínimo de 1600px no lado maior. Foto na vertical para os espaços altos.
