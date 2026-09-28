@@ -325,7 +325,7 @@ ul{margin:0;padding:0;list-style:none}
 .hero__meta dd{margin:0;font-family:var(--serif);font-size:var(--f-lg);color:var(--tinta)}
 
 .hero__arte{position:relative}
-.hero__moldura{aspect-ratio:4/5;width:100%}
+.hero__moldura{aspect-ratio:3/4;width:100%}
 .hero__moldura .ph__foto{background-position:50% 12%}
 .hero__etiqueta{
   position:absolute;right:-.6rem;bottom:1.6rem;background:var(--creme);border-radius:100px;
@@ -476,7 +476,7 @@ ul{margin:0;padding:0;list-style:none}
 
 /* Coroas de flores — tom sóbrio, sem perder a marca */
 .coroas{display:grid;gap:var(--s-5);align-items:center}
-.coroas .ph{aspect-ratio:4/5}
+.coroas .ph{aspect-ratio:3/4}
 .coroas__itens{display:grid;gap:.85rem;margin-top:var(--s-3)}
 .coroas__itens li{display:flex;align-items:center;gap:.8rem;font-size:var(--f-sm);color:var(--tinta-suave);font-weight:300}
 .coroas__itens svg{width:20px;height:20px;color:var(--verde);flex:none}
@@ -516,7 +516,7 @@ ul{margin:0;padding:0;list-style:none}
 .local__linha dd{margin:0;font-family:var(--serif);font-size:var(--f-lg);color:var(--creme)}
 .local__linha dd small{display:block;font-family:var(--sans);font-size:var(--f-sm);color:rgba(251,246,239,.62);font-weight:300;letter-spacing:.02em;margin-top:.15rem}
 .local__acoes{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:var(--s-3)}
-.local .ph{aspect-ratio:4/5}
+.local .ph{aspect-ratio:2/3}
 .horarios{display:grid;gap:.6rem;margin-top:.6rem}
 .horario{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;font-size:var(--f-sm)}
 .horario span:first-child{color:rgba(251,246,239,.72);font-weight:300}
@@ -635,7 +635,8 @@ ul{margin:0;padding:0;list-style:none}
   .sobre__arte{padding-left:var(--s-4)}
 
   .local{grid-template-columns:1.25fr .75fr;gap:var(--s-4);align-items:stretch}
-  .local .ph{height:100%;aspect-ratio:auto;min-height:520px}
+  .local{align-items:start}
+  .local .ph{aspect-ratio:2/3}
 
   .confianca{grid-template-columns:repeat(3,1fr)}
 
