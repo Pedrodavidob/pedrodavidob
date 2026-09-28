@@ -35,7 +35,8 @@ proporção de cada espaço e convertidas para WebP (1,4 MB no total).
 | `presentes.webp` | destaques | cesta com pelúcias, caneca e chocolates |
 | `combinacoes.webp` | destaques | buquê de rosas com Ferrero |
 | `chocolate-destaque.webp` | seção Chocolates | cesta de chocolates e vinho |
-| `coroas.webp` | seção Coroas de flores | coroa montada |
+| `coroas.webp` | seção Coroas de flores | coroa inteira, sem faixa |
+| `chocolate-destaque.webp` · `choc-1…6.webp` | seção Chocolates | foto do destaque e as seis opções da loja |
 | `arranjos.webp` | destaques | arranjo de gérberas em vaso |
 | `galeria-1.webp` … `galeria-5.webp` | galeria | vitrine, buquês, porta da loja e rua de Bom Conselho |
 | `fachada.webp` | localização | fachada da loja |
@@ -49,7 +50,15 @@ partir da foto de perfil oficial.
 `assets/img/fotos/fotos.json`. Sem o manifesto a página ainda encontra a foto
 sozinha, só faz algumas requisições a mais.
 
-Todos os espaços de fotografia estão preenchidos. A galeria tem cinco fotos
+Todos os espaços de fotografia estão preenchidos.
+
+**Coroa de flores.** A peça aparece inteira. Como a foto é 9:16 e o espaço é 3:4,
+a imagem foi montada sobre um fundo desfocado dela mesma em vez de ser cortada —
+assim a coroa e a base com o nome da loja continuam visíveis.
+
+**Opções de chocolate.** A seção de chocolates tem uma grade com uma foto por
+opção (duas colunas no celular, três no desktop). Para trocar uma opção, basta
+substituir o arquivo `choc-N.webp` e ajustar a legenda no `index.html`. A galeria tem cinco fotos
 (duas linhas completas da grade); para uma sexta, acrescente `galeria-6` no
 HTML e uma regra `.gf` em `style.css`.
 

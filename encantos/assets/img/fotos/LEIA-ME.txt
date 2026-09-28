@@ -12,7 +12,8 @@ Espaços:
   arranjos             arranjo de gérberas em vaso
   combinacoes          buquê de rosas com Ferrero
   chocolate-destaque   cesta de chocolates (seção Chocolates)
-  coroas               coroa de flores
+  coroas               coroa de flores (peça inteira)
+  choc-1 .. choc-6     as seis opções de chocolate da loja
   galeria-1 .. 5       vitrine, buquês, porta da loja e rua
   fachada              fachada da loja (Localização)
   sobre                letreiro da loja (Sobre)

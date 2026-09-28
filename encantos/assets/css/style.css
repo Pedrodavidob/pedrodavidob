@@ -427,6 +427,23 @@ ul{margin:0;padding:0;list-style:none}
 .secao--choc .rotulo::before{background:var(--dourado)}
 .secao--choc .texto{color:rgba(251,246,239,.72)}
 
+/* Opções de chocolate — grade com uma foto por opção */
+.opcoes{margin-top:var(--s-6)}
+.opcoes__cabeca{
+  display:grid;gap:.7rem;padding-top:var(--s-3);border-top:1px solid rgba(251,246,239,.16);
+  margin-bottom:var(--s-4);max-width:56ch
+}
+.opcoes__cabeca h3{font-size:var(--f-xl);color:var(--creme)}
+.opcoes__cabeca p{font-size:var(--f-sm);color:rgba(251,246,239,.66);font-weight:300;line-height:1.7}
+.opcoes__grade{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s-2)}
+.opcao{display:grid;gap:.75rem}
+.opcao .ph{aspect-ratio:4/5;width:100%;transition:transform .5s var(--ease)}
+.opcao:hover .ph{transform:translateY(-4px)}
+.opcao__nome{
+  font-size:var(--f-sm);color:rgba(251,246,239,.9);font-weight:400;letter-spacing:.02em;line-height:1.4
+}
+.opcoes__cta{margin-top:var(--s-4)}
+
 /* Galeria */
 .galeria{display:grid;gap:var(--s-2)}
 .galeria .ph{width:100%}
@@ -597,6 +614,8 @@ ul{margin:0;padding:0;list-style:none}
   .choc-grade{grid-template-columns:.95fr 1.05fr;gap:var(--s-6)}
   .choc-grade__texto{order:2}
   .choc-grade__arte{order:1}
+
+  .opcoes__grade{grid-template-columns:repeat(3,1fr);gap:var(--s-3)}
 
   .galeria{grid-template-columns:repeat(12,1fr);gap:var(--s-3)}
   .ga{grid-column:span 5}
